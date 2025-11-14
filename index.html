@@ -28,21 +28,7 @@ funktio palauttaa opintolainahyvityksen suuruuden.
     <p id="vastaus"></p>
 
     <script>
-      function laske() {
-        let laina = document.getElementById("laina").value;
-        let hyvitys = laskeHyvitys(laina);
-        let vastaus = "Opintolainahyvityksen suuruus on " + hyvitys.toFixed(2);
-        document.getElementById("vastaus").innerHTML = vastaus;
-      }
-
-      // Tänne pitää tehdä tehtävässä pyydetty funktio
-      function laskeHyvitys(laina) {
-        let hyvitys = 0;
-        if (laina > 2500) {
-          hyvitys = 0.4 * (laina - 2500);
-        }
-        return hyvitys;
-      }
+      <script src="joulukalenteri.js"></script>
     </script>
   </body>
 </html>
