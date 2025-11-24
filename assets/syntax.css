@@ -1,0 +1,10 @@
+/* Rouge uses .k for keywords */
+.highlight .k {
+  color: #0000ff !important; /* blue */
+  font-weight: bold;
+}
+
+/* Optional: types (int, varchar, etc.) */
+.highlight .kt {
+  color: #204a87 !important;
+}
