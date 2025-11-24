@@ -1,3 +1,8 @@
+---
+title: My Docs
+---
+
+<link rel="stylesheet" href="/assets/syntax.css">
 
 
 # Tietokannat, Indeksit ja Transaktiot
