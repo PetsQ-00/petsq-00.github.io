@@ -467,3 +467,35 @@ Käyttäjä B: Lukee 4704.60 → LUKITUS → Päivittää 4804.60 → COMMIT
 ---
 
 _Lähde: Petteri Lappalainen, 24.11.2025_
+
+---
+
+## SQL Server komennot - Indeksit
+
+```sql
+USE SWD03_syksy_2025;
+
+SELECT * FROM OPETTAJA;
+
+SELECT * FROM OPETTAJA
+WHERE palkka > 4600 AND palkka < 4700;
+
+-- Luodaan indeksi
+CREATE INDEX IX_Opettaja_palkka
+ON opettaja (palkka ASC);
+
+DROP INDEX IX_Opettaja_palkka ON opettaja;
+
+EXECUTE sp_helpindex opettaja;
+
+-- Display Estimated Execution Plan (CTRL+L)
+-- Include Actual Execution Plan (CTRL+M)
+SET SHOWPLAN_ALL ON;
+GO
+
+/* Kirjoita SQL-lause tähän */
+GO
+
+SET SHOWPLAN_ALL OFF;
+GO
+```
